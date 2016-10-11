@@ -14,65 +14,134 @@
 
 <body class="brown lighten-5">
     
-    <div id="aMenu" class="white">
+    <div id="aMenu" class="light-blue">
         <div class="logo center-align hide">
             <a href="index.html">
                 <img src="img/logo-aipode.png" alt="logomarca aipode">
             </a>
         </div>
         <ul>
-            <li class="active waves-effect">
-                <a href="#!" class="scrollto center-align black-text">
-                    <i class="ion-ios-home"></i>
+            <li class="active waves-effect waves-light">
+                <a href="index.html" class="scrollto center-align suave">
+                    <i class="ion-ios-home white-text"></i>
                 </a>
             </li>
             <li>
-                <a href="#!" class="scrollto center-align black-text">
-                    <i class="ion-edit"></i>
+                <a href="#!" class="scrollto center-align suave">
+                    <i class="ion-edit white-text"></i>
                 </a>
                 <ul class="white suave">
                     <li>
-                        <a href="novocordel.html" class="black-text">Novo Cordel</a>
+                        <a href="novocordel.html" class="black-text waves-effect">Novo Cordel</a>
                     </li>
                     <li>
-                        <a href="#!" class="black-text">Meus Cordéis</a>
+                        <a href="#!" class="black-text waves-effect">Meus Cordéis</a>
                     </li>
                 </ul>
             </li>
             <li>
-                <a href="#!" class="scrollto center-align black-text">
-                    <i class="ion-image"></i>
+                <a href="#!" class="scrollto center-align suave">
+                    <i class="ion-image white-text"></i>
                 </a>
                 <ul class="white suave">
                     <li>
-                        <a href="novacapa.html" class="black-text">Nova Capa</a>
+                        <a href="novacapa.html" class="black-text waves-effect">Nova Capa</a>
                     </li>
                     <li>
-                        <a href="#!" class="black-text">Minhas Capas</a>
+                        <a href="#!" class="black-text waves-effect">Minhas Capas</a>
                     </li>
                 </ul>
             </li>
-            <li class="waves-effect">
-                <a href="#!" class="scrollto center-align black-text">
-                    <i class="ion-help-circled"></i>
+            <li class="waves-effect waves-light">
+                <a href="#!" class="scrollto center-align suave">
+                    <i class="ion-help-circled white-text"></i>
                 </a>
             </li>
         </ul>
     </div>
 
     <div id="aContent">
+        <div class="palco">
+            <div class="capa white z-depth-1">
+                <h3 class="center-align">Titulo na Capa</h3>
+                <div class="imagens"></div>
+                <h5 class="center-align">Autor / Co-Autor</h5>
+            </div>
+        </div>
         <div class="palco-suporte brown lighten-4">
             <form>
-                <h6 class="center-align upper">Categorias</h6>
-                <select class="browser-default">
-                    <option value="#">Escolha o tipo de imagem</option>
-                    <option value="1">Animais</option>
-                    <option value="2">Pessoas</option>
-                    <option value="3">Plantas</option>
-                </select>
+                <div class="row nm">
+                    <div class="col l6">
+                        <h6 class="upper">Titulo</h6>
+                        <input type="text" name="titulo" placeholder="Digite o titulo do Cordel">
+                    </div>
+                    <div class="col l6">
+                        <h6 class="upper">Autor / Co-Autor</h6>
+                        <input type="text" name="autor" placeholder="Digite o autor(es) deste cordel">
+                    </div>
+                    <div class="col l12">
+                        <h6 class="upper">Cor da Capa</h6>
+                        <ul class="nm">
+                            <li class="center-align">
+                                <p>
+                                    <div class="cor red lighten-4 z-depth-1"></div>
+                                    <input class="with-gap" name="cordacapa" type="radio" id="cor1" />
+                                    <label for="cor1">Vermelho</label>
+                                </p>
+                            </li>
+                            <li class="center-align">
+                                <p>
+                                    <div class="cor yellow lighten-4 z-depth-1"></div>
+                                    <input class="with-gap" name="cordacapa" type="radio" id="cor2" />
+                                    <label for="cor2">Amarelo</label>
+                                </p>
+                            </li>
+                            <li class="center-align">
+                                <p>
+                                    <div class="cor white z-depth-1"></div>
+                                    <input class="with-gap" name="cordacapa" type="radio" id="cor3" checked="true" />
+                                    <label for="cor3">Branco</label>
+                                </p>
+                            </li>
+                            <li class="center-align">
+                                <p>
+                                    <div class="cor light-blue lighten-4 z-depth-1"></div>
+                                    <input class="with-gap" name="cordacapa" type="radio" id="cor4" />
+                                    <label for="cor4">Azul</label>
+                                </p>
+                            </li>
+                            <li class="center-align">
+                                <p>
+                                    <div class="cor light-green lighten-4 z-depth-1"></div>
+                                    <input class="with-gap" name="cordacapa" type="radio" id="cor5" />
+                                    <label for="cor5">Verde</label>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l6">
+                        <h6 class="upper">Categorias</h6>
+                        <select class="browser-default">
+                            <option value="#">Escolha o tipo de imagem</option>
+                            <option value="1">Animais</option>
+                            <option value="2">Pessoas</option>
+                            <option value="3">Plantas</option>
+                        </select>
+                    </div>
+                    <div class="col l12">
+                        <div class="col l3 item">
+                            <img src="img/item1.png" class="responsive-img">
+                        </div>
+                        <div class="col l3 item">
+                            <img src="img/item2.png" class="responsive-img">
+                        </div>
+                        <div class="col l3 item">
+                            <img src="img/item3.png" class="responsive-img">
+                        </div>
+                    </div>
+                </div>
             </form>
         </div>
-        <div class="palco white"></div>
     </div>
 
 </body>
