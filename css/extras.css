@@ -204,3 +204,119 @@
 
 }
 
+
+
+/****************************************************************************************/
+
+
+#cMenu{
+	width:100%;
+	height:60px;
+	position:fixed;
+	z-index:100;
+}
+#cMenu a{
+	width:100px;
+	height:40px;
+	line-height:36px;
+	border-radius:20px;
+	margin-top:10px;
+	text-align:center;
+	border: 2px solid #0288d1;
+	border-left: 3px solid #0288d1;
+	border-right: 3px solid #0288d1;
+}
+
+#cBanner{
+	width:100%;
+	height:100vh;
+}
+#cBanner .col{
+	height:100vh;
+	position:relative;
+}
+#cBanner .col img{
+	width:100%;
+	padding:0 20px;
+	position:absolute;
+	top:50%;
+	transform:translateY(-50%);
+	-webkit-transform:translateY(-50%);
+	-moz-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	-o-transform:translateY(-50%);
+}
+#cBanner .col article{
+	width:100%;
+	padding:0 20px;
+	position:absolute;
+	top:50%;
+	transform:translateY(-50%);
+	-webkit-transform:translateY(-50%);
+	-moz-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	-o-transform:translateY(-50%);
+}
+#cBanner a{
+	height:40px;
+	display:inline-block;
+	line-height:36px;
+	border-radius:20px;
+	margin-top:10px;
+	padding:0 20px;
+	border: 2px solid #0288d1;
+	border-left: 3px solid #0288d1;
+	border-right: 3px solid #0288d1;
+}
+
+#cCordeis{}
+#cCordeis ul{
+	overflow:hidden;
+}
+#cCordeis li{
+	width:calc(20% - 20px);
+	float:left;
+	margin:10px;
+}
+#cCordeis li .capa{
+	width:100%;
+	min-height:200px;
+	position:relative;
+	background-color:#CCC;
+}
+#cCordeis li h6{
+	padding:0 10px;
+	margin-bottom:0;
+}
+#cCordeis li span{
+	display:block;
+	font-size:12px;
+	color:#cc651f;
+	font-weight:bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
