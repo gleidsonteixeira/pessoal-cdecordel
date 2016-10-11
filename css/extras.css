@@ -294,8 +294,16 @@
 	color:#cc651f;
 	font-weight:bold;
 }
-
-
+#cSobre{
+	padding:100px 0;
+}
+#cSobre .imagem{
+	width:100%;
+	height:350px;
+}
+#cRodape{
+	padding:20px 0;
+}
 
 
 
