@@ -81,7 +81,7 @@
 #aMenu{
 	width: 70px;
 	height: 100%;
-	border-right: 1px solid #d7ccc8;
+	border-right: 5px solid #0288d1;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -118,6 +118,9 @@
 }
 #aMenu ul li a{
 	display: block;
+}
+#aMenu ul li a:hover{
+	background-color: rgba(0,0,0,.1);
 }
 #aMenu ul li i{
 	width: 70px;
@@ -165,11 +168,17 @@
 #aMenu ul li ul li{
 	width: 150px;
 	height: auto;
-	padding: 10px;
-	padding-left: 15px;
 }
 #aMenu ul li ul li:hover{
 	background-color: rgba(0,0,0,.05);
+}
+#aMenu ul li ul li a{
+	display: block;
+	padding: 10px;
+	padding-left: 15px;
+}
+#aMenu ul li ul li a:hover{
+	background-color: transparent;
 }
 
 #aContent{
@@ -179,19 +188,93 @@
 	right: 0;
 }
 #aContent .palco{
+	width: 60%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+}
+#aContent .palco .capa{
 	width: 400px;
 	height: 500px;
 	position: absolute;
 	top: calc(50% - 250px);
-	left: calc(50% - 235px);
-	border: 3px dashed #d7ccc8;
+	left: calc(50% - 200px);
+}
+#aContent .palco .capa h3{
+	margin: 0;
+	height: 80px;
+	line-height: 80px;
+}
+#aContent .palco .capa .imagens{
+	width: 360px;
+	height: 350px;
+	border: 2px dashed #CCC;
+	margin: 20px;
+	position: relative;
+}
+#aContent .palco .capa .imagens::after{
+	content: "Arraste e Solte as imagens aqui...";
+	font-size: 36px;
+	font-weight: lighter;
+	text-align: center;
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+
+}
+#aContent .palco .capa h5{
+	margin: 0;
+	height: 30px;
+	line-height: 30px;
+	font-size: 18px;
 }
 #aContent .palco-suporte{
-	width: 300px;
+	width: 40%;
 	height: 100%;
 	padding: 15px;
 	overflow: auto;
 	position: absolute;
+	right: 0;
+	top: 0;
+}
+#aContent .palco-suporte input,
+#aContent .palco-suporte select{
+	height: 40px;
+	line-height: 40px;
+	background-color: #efebe9;
+	border-radius: 30px;
+	padding-left: 15px;
+	box-sizing: border-box;
+	box-shadow: none;
+	border: 2px solid #bcaaa4;
+}
+#aContent .palco-suporte ul li{
+	width: 20%;
+	height: initial;
+	float: left;
+	display: block;
+}
+#aContent .palco-suporte .cor{
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+}
+#aContent .palco-suporte h6{
+	padding-left: 15px;
+}
+#aContent .palco-suporte .item{
+	padding: 10px;
+}
+#aContent .palco-suporte .item img{
+	border: 2px solid #bcaaa4;
+	border-radius: 10px;
 	left: 0;
 	top: 0;
 }
@@ -308,6 +391,15 @@
 
 
 
+@media only screen and ( max-width: 768px ){
+
+}
+@media only screen and ( max-width: 480px ){
+
+}
+
+
+
 
 
 
@@ -328,3 +420,4 @@
 
 
 	
+
