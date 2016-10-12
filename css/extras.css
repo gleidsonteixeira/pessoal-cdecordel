@@ -114,13 +114,17 @@
 	color: #000;
 }
 #aMenu ul{
-	height: 280px;
-	margin-top: calc(50vh - 140px);
+	height: 350px;
+	margin-top: calc(50vh - 225px);
 }
 #aMenu ul li{
 	width: 70px;
 	height: 70px;
 	position: relative;
+}
+#aMenu ul li img{
+	width:50px;
+	margin-top:16px;
 }
 #aMenu ul li a{
 	display: block;
@@ -231,7 +235,6 @@
 	-moz-transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
 	-o-transform: translateY(-50%);
-
 }
 #aContent .palco .capa h5{
 	margin: 0;
@@ -284,6 +287,24 @@
 	left: 0;
 	top: 0;
 }
+#aContent .meuscordeis{}
+#aContent .meuscordeis h5{
+	padding-left:20px;
+}
+#aContent .meuscordeis h5 span{
+	position:relative;
+	display:inline-block;
+}
+#aContent .meuscordeis h5 span::before{
+	content:"";
+	width:60px;
+	height:6px;
+	border-radius:3px;
+	background-color:#444;
+	position:absolute;
+	top:13px;
+	left:calc(100% + 20px);
+}
 
 
 @media only screen and ( max-width: 768px ){
@@ -304,12 +325,22 @@
 	position:fixed;
 	z-index:100;
 }
-#cMenu a{
+#cMenu h1{
+	font-size:36px;
+	line-height:60px;
+}
+#cMenu img{
+	height:50px;
+	margin-top:5px;
+}
+#cMenu a.btn{
 	width:100px;
 	height:40px;
 	line-height:36px;
 	border-radius:20px;
 	margin-top:10px;
+	padding:0;
+	text-transform:none;
 	text-align:center;
 	border: 2px solid #0288d1;
 	border-left: 3px solid #0288d1;
@@ -361,35 +392,71 @@
 	border-right: 3px solid #0288d1;
 }
 
-#cCordeis{}
-#cCordeis ul{
+#cCordeis{
+	padding-top:100px;
+}
+#cCordeis h5{
+	height:40px;
+	line-height:40px;
+}
+#cCordeis h5 span{
+	position:relative;
+	display:inline-block;
+}
+#cCordeis h5 span::before{
+	content:"";
+	width:60px;
+	height:6px;
+	border-radius:3px;
+	background-color:#444;
+	position:absolute;
+	top:18px;
+	left:calc(100% + 20px);
+}
+#cCordeis h5 a.btn{
+	font-size:15px;
+	width:150px;
+	height:40px;
+	line-height:36px;
+	border-radius:20px;
+	padding:0;
+	text-transform:none;
+	text-align:center;
+	border: 2px solid #0288d1;
+	border-left: 3px solid #0288d1;
+	border-right: 3px solid #0288d1;
+}
+#cCordeis ul,
+#aContent .meuscordeis ul{
 	overflow:hidden;
 }
-#cCordeis li{
+#cCordeis li,
+#aContent .meuscordeis li{
 	width:calc(20% - 20px);
 	float:left;
 	margin:10px;
 }
-#cCordeis li .capa{
+#cCordeis li .capa,
+#aContent .meuscordeis li .capa{
 	width:100%;
-	min-height:200px;
 	position:relative;
 	background-color:#CCC;
-	position:relative;
-	overflow:hidden;
 }
-#cCordeis li .capa img{
-	height:100%;
-	position:absolute;
+#cCordeis li .capa img,
+#aContent .meuscordeis li .capa img{
+	width:100%;
 }
-#cCordeis li h6{
+#cCordeis li h6,
+#aContent .meuscordeis li h6{
 	padding:0 10px;
 	margin-bottom:0;
 }
-#cCordeis li span{
+#cCordeis li span,
+#aContent .meuscordeis li span{
 	display:block;
 	font-size:12px;
-	color:#cc651f;
+	/*color:#cc651f;*/
+	color:#444;
 	font-weight:bold;
 }
 #cSobre{
@@ -401,6 +468,13 @@
 }
 #cRodape{
 	padding:20px 0;
+}
+#cRodape img{
+	height:50px;
+	margin-bottom:20px;
+}
+#cRodape span{
+	display:block;
 }
 
 
