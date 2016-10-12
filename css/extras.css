@@ -75,6 +75,12 @@
 .hind{
 	font-family: 'Hind Guntur', sans-serif;
 }
+.varela{
+	font-family: 'Varela Round', sans-serif;
+}
+.comforta{
+	font-family: 'Comfortaa', cursive;
+}
 
 /****************************************************************************************/
 
@@ -340,6 +346,9 @@
 	-ms-transform:translateY(-50%);
 	-o-transform:translateY(-50%);
 }
+#cBanner .col article p{
+	font-size:18px;
+}
 #cBanner a{
 	height:40px;
 	display:inline-block;
@@ -366,6 +375,12 @@
 	min-height:200px;
 	position:relative;
 	background-color:#CCC;
+	position:relative;
+	overflow:hidden;
+}
+#cCordeis li .capa img{
+	height:100%;
+	position:absolute;
 }
 #cCordeis li h6{
 	padding:0 10px;
