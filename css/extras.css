@@ -293,6 +293,16 @@
 #aContent .meuscordeis ul li:last-child{
 	border: 2px dashed #444 ;
 }
+#aContent .novocordel{
+	border: 1px solid red;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+}
 #aContent .novocordel .folha{
 	width: 400px;
 	height: 500px;
