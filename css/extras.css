@@ -93,29 +93,9 @@
 	left: 0;
 	z-index: 999;
 }
-#aMenu .logo{
-	height: 60px;
-	margin: 10px 0;
-}
-#aMenu .logo a{
-	display: block;
-}
-#aMenu .logo img{
-	width: 60px;
-	display: inline-block;
-}
-#aMenu .logo span{
-	height: 60px;
-	line-height: 60px;
-	display: inline-block;
-	vertical-align: top;
-	padding-left: 15px;
-	font-size: 32px;
-	color: #000;
-}
 #aMenu ul{
 	height: 350px;
-	margin-top: calc(50vh - 225px);
+	margin-top: calc(50vh - 170px);
 }
 #aMenu ul li{
 	width: 70px;
@@ -127,6 +107,7 @@
 	margin-top:16px;
 }
 #aMenu ul li a{
+	height:70px;
 	display: block;
 }
 #aMenu ul li a:hover{
@@ -183,6 +164,7 @@
 	background-color: rgba(0,0,0,.05);
 }
 #aMenu ul li ul li a{
+	height:auto;
 	display: block;
 	padding: 10px;
 	padding-left: 15px;
@@ -304,6 +286,16 @@
 	position:absolute;
 	top:13px;
 	left:calc(100% + 20px);
+}
+#aContent .meuscordeis ul{
+	padding:0 11px;
+}
+#aContent .meuscordeis ul li:last-child{
+	border: 2px dashed #444 ;
+}
+#aContent .novocordel .folha{
+	width: 400px;
+	height: 500px;
 }
 
 
