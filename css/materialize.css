@@ -9061,7 +9061,7 @@ textarea.materialize-textarea {
 [type="radio"]:not(:checked) + label,
 [type="radio"]:checked + label {
   position: relative;
-  padding-left: 35px;
+  padding-left: 23px;
   cursor: pointer;
   display: inline-block;
   height: 25px;
@@ -9091,7 +9091,7 @@ textarea.materialize-textarea {
 /* Unchecked styles */
 [type="radio"]:not(:checked) + label:before {
   border-radius: 50%;
-  border: 2px solid #5a5a5a;
+  border: 2px solid rgba(255,255,255,.5);
 }
 
 [type="radio"]:not(:checked) + label:after {
@@ -9120,13 +9120,13 @@ textarea.materialize-textarea {
 /* Radio With gap */
 [type="radio"].with-gap:checked + label:before {
   border-radius: 50%;
-  border: 2px solid #26a69a;
+  border: 2px solid #FFF;
 }
 
 [type="radio"].with-gap:checked + label:after {
   border-radius: 50%;
-  border: 2px solid #26a69a;
-  background-color: #26a69a;
+  border: 2px solid #FFF;
+  background-color: #FFF;
   z-index: 0;
   -webkit-transform: scale(0.5);
           transform: scale(0.5);
@@ -9134,32 +9134,32 @@ textarea.materialize-textarea {
 
 /* Disabled Radio With gap */
 [type="radio"].with-gap:disabled:checked + label:before {
-  border: 2px solid rgba(0, 0, 0, 0.26);
+  border: 2px solid rgba(255,255,255,.5);
 }
 
 [type="radio"].with-gap:disabled:checked + label:after {
   border: none;
-  background-color: rgba(0, 0, 0, 0.26);
+  background-color: rgba(255,255,255,.5);
 }
 
 /* Disabled style */
 [type="radio"]:disabled:not(:checked) + label:before,
 [type="radio"]:disabled:checked + label:before {
   background-color: transparent;
-  border-color: rgba(0, 0, 0, 0.26);
+  border-color: rgba(255,255,255,.5);
 }
 
 [type="radio"]:disabled + label {
-  color: rgba(0, 0, 0, 0.26);
+  color: rgba(255,255,255,.5);
 }
 
 [type="radio"]:disabled:not(:checked) + label:before {
-  border-color: rgba(0, 0, 0, 0.26);
+  border-color: rgba(255,255,255,.5);
 }
 
 [type="radio"]:disabled:checked + label:after {
   background-color: rgba(0, 0, 0, 0.26);
-  border-color: #BDBDBD;
+  border-color: rgba(255,255,255,.5);;
 }
 
 /***************

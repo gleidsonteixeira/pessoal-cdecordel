@@ -8,11 +8,13 @@
 <link href="css/ionicons.css" rel="stylesheet" type="text/css"/>
 <link href="css/materialize.css" rel="stylesheet" type="text/css"/>
 <link href="https://fonts.googleapis.com/css?family=Hind+Guntur:700|Lato" rel="stylesheet">
+<script src="http://cdn.tinymce.com/4/tinymce.min.js"></script>
+<script>tinymce.init({ selector:'textarea' });</script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 
 </head>
 
-<body class="grey lighten-2">
+<body class="blue-grey darken-4">
     
     <div id="aMenu" class="light-blue">
         <div class="logo center-align">
@@ -24,14 +26,14 @@
                     <img src="img/cdecordel-logo3.png" alt="logomarca c de cordel" class="responsive-img" />
                 </a>
             </li>
-            <li class="active waves-effect">
+            <li class="waves-effect">
                 <a href="painelindex.html" class="center-align">
-                    <i class="ion-ios-home white-text"></i>
+                    <i class="ion-ios-home"></i>
                 </a>
             </li>
-            <li>
+            <li class="active">
                 <a class="center-align">
-                    <i class="ion-edit white-text"></i>
+                    <i class="ion-edit"></i>
                 </a>
                 <ul class="white suave">
                     <li>
@@ -44,7 +46,7 @@
             </li>
             <li>
                 <a class="center-align">
-                    <i class="ion-image white-text"></i>
+                    <i class="ion-image"></i>
                 </a>
                 <ul class="white suave">
                     <li>
@@ -57,19 +59,32 @@
             </li>
             <li class="waves-effect">
                 <a href="info.html" class="center-align">
-                    <i class="ion-help-circled white-text"></i>
+                    <i class="ion-help-circled"></i>
                 </a>
             </li>
         </ul>
     </div>
     
     <div id="aContent">
-    	<div class="novocordel">
-        	<ul class="nm">
-            	<li>
-                	<div class="folha white z-depth-1"></div>
-                </li>
-            </ul>
+    	<div class="palco">
+            <div class="folha white">
+                <p></p>
+            </div>
+        </div>
+        <div class="palco-suporte blue-grey darken-3">
+            <form name="montarcapa">
+                <div class="row nm">
+                    <div class="col l12 m12 s12">
+                        <h6 class="white-text">Escreva seu Cordel</h6>
+                        <textarea></textarea>
+                    </div>
+                    <div class="col l12 m12 s12 right-align">
+                        <button class="btn light-blue">
+                            Salvar Alterações
+                        </button>
+                    </div>
+                </div>
+            </form>
         </div>
     </div>
 

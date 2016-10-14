@@ -12,7 +12,7 @@
 
 </head>
 
-<body class="brown lighten-5">
+<body class="blue-grey darken-4">
     
     <div id="aMenu" class="light-blue">
         <div class="logo center-align hide">
@@ -21,14 +21,19 @@
             </a>
         </div>
         <ul>
-            <li class="active waves-effect waves-light">
+            <li>
+                <a href="painelindex.html" class="center-align">
+                    <img src="img/cdecordel-logo3.png" alt="logomarca c de cordel" class="responsive-img" />
+                </a>
+            </li>
+            <li class="waves-effect waves-light">
                 <a href="painelindex.html" class="scrollto center-align suave">
-                    <i class="ion-ios-home white-text"></i>
+                    <i class="ion-ios-home"></i>
                 </a>
             </li>
             <li>
                 <a href="#!" class="scrollto center-align suave">
-                    <i class="ion-edit white-text"></i>
+                    <i class="ion-edit"></i>
                 </a>
                 <ul class="white suave">
                     <li>
@@ -39,22 +44,22 @@
                     </li>
                 </ul>
             </li>
-            <li>
+            <li class="active">
                 <a href="#!" class="scrollto center-align suave">
-                    <i class="ion-image white-text"></i>
+                    <i class="ion-image"></i>
                 </a>
                 <ul class="white suave">
                     <li>
                         <a href="novacapa.html" class="black-text waves-effect">Nova Capa</a>
                     </li>
                     <li>
-                        <a href="#!" class="black-text waves-effect">Minhas Capas</a>
+                        <a href="minhascapas.html" class="black-text waves-effect">Minhas Capas</a>
                     </li>
                 </ul>
             </li>
             <li class="waves-effect waves-light">
                 <a href="#!" class="scrollto center-align suave">
-                    <i class="ion-help-circled white-text"></i>
+                    <i class="ion-help-circled"></i>
                 </a>
             </li>
         </ul>
@@ -62,82 +67,93 @@
 
     <div id="aContent">
         <div class="palco">
-            <div class="capa white z-depth-1">
-                <h3 class="center-align">Titulo na Capa</h3>
+            <div class="capa white lighten-4">
+                <h3 id="titulo-capa" class="center-align">Titulo na Capa</h3>
                 <div class="imagens"></div>
-                <h5 class="center-align">Autor / Co-Autor</h5>
+                <h5 id="autor-capa" class="center-align">Autor / Co-Autor</h5>
             </div>
         </div>
-        <div class="palco-suporte brown lighten-4">
-            <form>
+        <div class="palco-suporte blue-grey darken-3">
+            <form name="montarcapa">
                 <div class="row nm">
-                    <div class="col l6">
-                        <h6 class="upper">Titulo</h6>
-                        <input type="text" name="titulo" placeholder="Digite o titulo do Cordel">
+                    <div class="col l6 m6 s12">
+                        <h6 class="white-text">Titulo</h6>
+                        <input type="text" id="titulo" name="titulo" placeholder="Digite o titulo do Cordel" class="white-text">
                     </div>
-                    <div class="col l6">
-                        <h6 class="upper">Autor / Co-Autor</h6>
-                        <input type="text" name="autor" placeholder="Digite o autor(es) deste cordel">
+                    <div class="col l6 m6 s12">
+                        <h6 class="white-text">Autor / Co-Autor</h6>
+                        <input type="text" id="autor" name="autor" placeholder="Digite o nome do autor" class="white-text">
                     </div>
-                    <div class="col l12">
-                        <h6 class="upper">Cor da Capa</h6>
-                        <ul class="nm">
+                    <div class="col l12 m12 s12">
+                        <h6 class="white-text">Cor da Capa</h6>
+                        <ul>
                             <li class="center-align">
                                 <p>
                                     <div class="cor red lighten-4 z-depth-1"></div>
-                                    <input class="with-gap" name="cordacapa" type="radio" id="cor1" />
-                                    <label for="cor1">Vermelho</label>
+                                    <input class="with-gap" name="cordacapa" type="radio" id="cor1" data-cor="cor1" />
+                                    <label for="cor1" class="white-text">Vermelho</label>
                                 </p>
                             </li>
                             <li class="center-align">
                                 <p>
                                     <div class="cor yellow lighten-4 z-depth-1"></div>
-                                    <input class="with-gap" name="cordacapa" type="radio" id="cor2" />
-                                    <label for="cor2">Amarelo</label>
+                                    <input class="with-gap" name="cordacapa" type="radio" id="cor2" data-cor="cor2" />
+                                    <label for="cor2" class="white-text">Amarelo</label>
                                 </p>
                             </li>
                             <li class="center-align">
                                 <p>
                                     <div class="cor white z-depth-1"></div>
-                                    <input class="with-gap" name="cordacapa" type="radio" id="cor3" checked="true" />
-                                    <label for="cor3">Branco</label>
+                                    <input class="with-gap" name="cordacapa" type="radio" id="cor3" data-cor="cor3" checked="true" />
+                                    <label for="cor3" class="white-text">Branco</label>
                                 </p>
                             </li>
                             <li class="center-align">
                                 <p>
                                     <div class="cor light-blue lighten-4 z-depth-1"></div>
-                                    <input class="with-gap" name="cordacapa" type="radio" id="cor4" />
-                                    <label for="cor4">Azul</label>
+                                    <input class="with-gap" name="cordacapa" type="radio" id="cor4" data-cor="cor4" />
+                                    <label for="cor4" class="white-text">Azul</label>
                                 </p>
                             </li>
                             <li class="center-align">
                                 <p>
                                     <div class="cor light-green lighten-4 z-depth-1"></div>
-                                    <input class="with-gap" name="cordacapa" type="radio" id="cor5" />
-                                    <label for="cor5">Verde</label>
+                                    <input class="with-gap" name="cordacapa" type="radio" id="cor5" data-cor="cor5" />
+                                    <label for="cor5" class="white-text">Verde</label>
                                 </p>
                             </li>
                         </ul>
                     </div>
-                    <div class="col l6">
-                        <h6 class="upper">Categorias</h6>
-                        <select class="browser-default">
-                            <option value="#">Escolha o tipo de imagem</option>
-                            <option value="1">Animais</option>
-                            <option value="2">Pessoas</option>
-                            <option value="3">Plantas</option>
+                    <div class="col l12 m12 s12">
+                        <h6 class="white-text">Categorias</h6>
+                        <select class="browser-default transparent blue-grey white-text">
+                            <option value="#" class="blue-grey darken-3">Escolha o tipo de imagem</option>
+                            <option value="1" class="blue-grey darken-3">Animais</option>
+                            <option value="2" class="blue-grey darken-3">Pessoas</option>
+                            <option value="3" class="blue-grey darken-3">Plantas</option>
                         </select>
                     </div>
-                    <div class="col l12">
+                    <div class="col l12 m12 s12">
                         <div class="col l3 item">
-                            <img src="img/item1.png" class="responsive-img">
+                            <img src="img/xilo/xilo1.jpg" class="responsive-img hoverable">
                         </div>
                         <div class="col l3 item">
-                            <img src="img/item2.png" class="responsive-img">
+                            <img src="img/xilo/xilo2.jpg" class="responsive-img hoverable">
                         </div>
                         <div class="col l3 item">
-                            <img src="img/item3.png" class="responsive-img">
+                            <img src="img/xilo/xilo3.jpg" class="responsive-img hoverable">
                         </div>
+                        <div class="col l3 item">
+                            <img src="img/xilo/xilo4.jpg" class="responsive-img hoverable">
+                        </div>
+                        <div class="col l3 item">
+                            <img src="img/xilo/xilo5.jpg" class="responsive-img hoverable">
+                        </div>
+                    </div>
+                    <div class="col l12 m12 s12 right-align">
+                        <button class="btn light-blue">
+                            Salvar Alterações
+                        </button>
                     </div>
                 </div>
             </form>
