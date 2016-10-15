@@ -46,3 +46,12 @@ function montarCapa(){
 		}
 	})
 }
+$(function() { 
+    $("#btnSave").click(function() { 
+        html2canvas($(".palco"), {
+		  onrendered: function(canvas) {
+			document.body.appendChild(canvas);
+		  }
+		});
+    });
+}); 
