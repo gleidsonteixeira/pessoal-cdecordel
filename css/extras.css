@@ -69,18 +69,10 @@
 	border: 2px solid #FFF;
 	line-height: 52px;
 }
-.lato{
-	font-family: 'Lato', sans-serif;
+.op, body{
+	font-family: 'Open Sans', sans-serif;
 }
-.hind{
-	font-family: 'Hind Guntur', sans-serif;
-}
-.varela{
-	font-family: 'Varela Round', sans-serif;
-}
-.comforta{
-	font-family: 'Comfortaa', cursive;
-}
+
 
 /****************************************************************************************/
 
@@ -368,6 +360,16 @@
 
 /****************************************************************************************/
 
+.waves-effect.waves-brown .waves-ripple {
+	background-color: rgba(121, 85, 72, 0.65);
+}
+
+.marrom{
+	background-color: #e87e36 !important;
+}
+.marrom-text{
+	color: #e87e36 !important;
+}
 
 #cMenu{
 	width:100%;
@@ -376,109 +378,111 @@
 	z-index:100;
 }
 #cMenu h1{
-	font-size:36px;
+	font-size:28px;
 	line-height:60px;
 }
-#cMenu img{
+#cMenu h1 img{
 	height:50px;
 	margin-top:5px;
+	float: left;
+	margin-right: 20px;
 }
-#cMenu a.btn{
+a.btn, span.btn{
 	width:100px;
-	height:40px;
-	line-height:36px;
+	height:30px;
+	line-height:28px;
 	border-radius:20px;
-	margin-top:10px;
+	margin-top:15px;
 	padding:0;
 	text-transform:none;
 	text-align:center;
-	border: 2px solid #0288d1;
-	border-left: 3px solid #0288d1;
-	border-right: 3px solid #0288d1;
+}
+span.btn{
+	cursor: initial;
 }
 
 #cBanner{
 	width:100%;
-	height:100vh;
+	height:560px;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	position: relative;
+	overflow: hidden;
+}
+#cBanner .contracapa{
+	width: 100%;
+	position: absolute;
+}
+#cBanner .contracapa img{
+	width: 100%;
+	top: 50%;
+	transform: translateY(-40%);
+	-webkit-transform: translateY(-40%);
+	-moz-transform: translateY(-40%);
+	-ms-transform: translateY(-40%);
+	-o-transform: translateY(-40%);
+	filter: blur(20px);
+	-webkit-filter: blur(20px);
+	-moz-filter: blur(20px);
+	-ms-filter: blur(20px);
+	-o-filter: blur(20px);
 }
 #cBanner .col{
-	height:100vh;
-	position:relative;
+	position: relative;
+	height: 440px;
 }
-#cBanner .col img{
-	width:100%;
-	padding:0 20px;
-	position:absolute;
-	top:50%;
-	transform:translateY(-50%);
-	-webkit-transform:translateY(-50%);
-	-moz-transform:translateY(-50%);
-	-ms-transform:translateY(-50%);
-	-o-transform:translateY(-50%);
+#cBanner .col img,
+#cBanner .col article{
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
 }
 #cBanner .col article{
-	width:100%;
-	padding:0 20px;
-	position:absolute;
-	top:50%;
-	transform:translateY(-50%);
-	-webkit-transform:translateY(-50%);
-	-moz-transform:translateY(-50%);
-	-ms-transform:translateY(-50%);
-	-o-transform:translateY(-50%);
+	padding-left: 30px;
 }
-#cBanner .col article p{
-	font-size:18px;
+#cBanner h5{
+	font-size: 20px;
+	margin-bottom: 0;
 }
 #cBanner a{
-	height:40px;
-	display:inline-block;
-	line-height:36px;
-	border-radius:20px;
-	margin-top:10px;
-	padding:0 20px;
-	border: 2px solid #0288d1;
-	border-left: 3px solid #0288d1;
-	border-right: 3px solid #0288d1;
+	margin-right: 10px;
 }
 
 #cCordeis{
-	padding-top:100px;
+	margin-top: -60px;
 }
-#cCordeis h5{
+#cCordeis .container{
+	position: relative;
+	z-index: 5;
+	border-radius: 10px 10px 0 0;
+}
+#cCordeis h6{
 	height:40px;
 	line-height:40px;
 }
-#cCordeis h5 span{
+#cCordeis h6 span{
 	position:relative;
 	display:inline-block;
 }
-#cCordeis h5 span::before{
+#cCordeis h6 span::before{
 	content:"";
 	width:60px;
 	height:6px;
 	border-radius:3px;
-	background-color:#444;
+	background-color:#039be5;
 	position:absolute;
 	top:18px;
 	left:calc(100% + 20px);
 }
-#cCordeis h5 a.btn{
-	font-size:15px;
-	width:150px;
-	height:40px;
-	line-height:36px;
-	border-radius:20px;
-	padding:0;
-	text-transform:none;
-	text-align:center;
-	border: 2px solid #0288d1;
-	border-left: 3px solid #0288d1;
-	border-right: 3px solid #0288d1;
-}
 #cCordeis ul,
 #aContent .meuscordeis ul{
 	overflow:hidden;
+	padding: 20px 0;
 }
 #cCordeis li,
 #aContent .meuscordeis li{
@@ -486,15 +490,44 @@
 	float:left;
 	margin:10px;
 }
+#cCordeis li a{
+	display: block;
+	padding-bottom: 10px;
+	border-radius: 5px 5px 0 0;
+	position: relative;
+}
+#cCordeis li a::before{
+	content: "";
+	width: 150px;
+	height: 50px;
+	border-radius: 50px;
+	position: absolute;
+	bottom: 0;
+	left: calc(50% - 75px);
+	z-index: -1;
+	box-shadow: 0px 3px 10px rgba(0,0,0,.2);
+	transition-duration: 0.3s;
+	-webkit-transition-duration: 0.3s;
+	-moz-transition-duration: 0.3s;
+	-ms-transition-duration: 0.3s;
+	-o-transition-duration: 0.3s;
+}
+#cCordeis li a:hover::before{
+	box-shadow: 0px 3px 10px rgba(0,0,0,.5);
+}
 #cCordeis li .capa,
 #aContent .meuscordeis li .capa{
 	width:100%;
 	position:relative;
-	background-color:#CCC;
 }
 #cCordeis li .capa img,
 #aContent .meuscordeis li .capa img{
 	width:100%;
+	border-radius: 5px 5px 0 0;
+}
+#cCordeis li .capa:hover img{
+	transform: scale(1.10,1.10);
+	-webkit-transform: scale(1.10,1.10);
 }
 #cCordeis li h6,
 #aContent .meuscordeis li h6{
