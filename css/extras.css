@@ -1,4 +1,31 @@
 /* CSS Document */
+body{
+	padding: 50px;
+	box-sizing: border-box;
+}
+.panodefundo{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: fixed;
+	z-index: -1;
+	top: 0;
+	left: 0;
+}
+.gradi{
+	background-color: #EFA270;
+	background-image: -webkit-linear-gradient(45deg, #cc651f, #EFA270) !important;
+	background-image: -moz-linear-gradient(45deg, #cc651f, #EFA270) !important;
+	background-image: -ms-linear-gradient(45deg, #cc651f, #EFA270) !important;
+	background-image: -o-linear-gradient(45deg, #cc651f, #EFA270) !important;
+}
+.gradi-in{
+	background-color: #EFA270;
+	background-image: -webkit-linear-gradient(45deg, #EFA270, #cc651f) !important;
+	background-image: -moz-linear-gradient(45deg, #EFA270, #cc651f) !important;
+	background-image: -ms-linear-gradient(45deg, #EFA270, #cc651f) !important;
+	background-image: -o-linear-gradient(45deg, #EFA270, #cc651f) !important;
+}
 .condesed{
 	font-family: 'Roboto Condensed', sans-serif;
 }
@@ -371,11 +398,16 @@
 	color: #e87e36 !important;
 }
 
+.geral{
+	border-radius: 10px;
+}
+
 #cMenu{
 	width:100%;
 	height:60px;
-	position:fixed;
-	z-index:100;
+	/*position:fixed;
+	z-index:100;*/
+	border-radius: 10px 10px 0 0;
 }
 #cMenu h1{
 	font-size:28px;
@@ -402,16 +434,29 @@ span.btn{
 }
 
 #cBanner{
-	width:100%;
-	height:560px;
-	padding-top: 60px;
-	padding-bottom: 60px;
-	position: relative;
+	width:100% !important;
 	overflow: hidden;
+	background-color: white;
+}
+#cBanner .cordel{
+	width: 100%;
+	height: 500px !important;
+	position: relative;
 }
 #cBanner .contracapa{
 	width: 100%;
 	position: absolute;
+	z-index: -1;
+}
+#cBanner .contracapa::before{
+	content: "";
+	width: 100%;
+	height: 560px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: rgba(0,0,0,.2);
+	z-index: 1;
 }
 #cBanner .contracapa img{
 	width: 100%;
@@ -453,42 +498,46 @@ span.btn{
 	margin-right: 10px;
 }
 
-#cCordeis{
-	margin-top: -60px;
-}
+#cCordeis{}
 #cCordeis .container{
 	position: relative;
 	z-index: 5;
 	border-radius: 10px 10px 0 0;
+	margin-top: -60px;
 }
-#cCordeis h6{
-	height:40px;
-	line-height:40px;
+#cCordeis h5{
+	font-size: 18px;
+	height:60px;
+	line-height:60px;
+	margin: 0;
+	padding-left: 30px;
 }
-#cCordeis h6 span{
+#cCordeis h5 span{
 	position:relative;
 	display:inline-block;
 }
-#cCordeis h6 span::before{
+#cCordeis h5 span::before{
 	content:"";
 	width:60px;
 	height:6px;
 	border-radius:3px;
 	background-color:#039be5;
 	position:absolute;
-	top:18px;
+	top:28px;
 	left:calc(100% + 20px);
 }
 #cCordeis ul,
 #aContent .meuscordeis ul{
 	overflow:hidden;
-	padding: 20px 0;
+	padding: 10px;
 }
 #cCordeis li,
 #aContent .meuscordeis li{
 	width:calc(20% - 20px);
 	float:left;
 	margin:10px;
+	border: 1px solid #DDD;
+	border-radius: 5px 5px 0 0;
 }
 #cCordeis li a{
 	display: block;
@@ -525,10 +574,6 @@ span.btn{
 	width:100%;
 	border-radius: 5px 5px 0 0;
 }
-#cCordeis li .capa:hover img{
-	transform: scale(1.10,1.10);
-	-webkit-transform: scale(1.10,1.10);
-}
 #cCordeis li h6,
 #aContent .meuscordeis li h6{
 	padding:0 10px;
@@ -551,6 +596,7 @@ span.btn{
 }
 #cRodape{
 	padding:20px 0;
+	border-radius: 0 0 10px 10px;
 }
 #cRodape img{
 	height:50px;

@@ -1,6 +1,7 @@
 $(document).ready(function(){
 	montarCordel();
 	montarCapa();
+	cBanner();
 })
 $(window).resize(function(){})
 
@@ -46,6 +47,10 @@ function montarCapa(){
 		}
 	})
 }
+function cBanner(){
+	$('#cBanner').cycle();
+}
+
 $(function() { 
     $("#btnSave").click(function() { 
         html2canvas($(".palco"), {
