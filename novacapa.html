@@ -15,50 +15,45 @@
 <body class="blue-grey darken-4">
     
     <div id="aMenu" class="light-blue">
-        <div class="logo center-align hide">
-            <a href="painelindex.html">
-                <img src="img/logo-aipode.png" alt="logomarca aipode">
-            </a>
-        </div>
         <ul>
             <li>
-                <a href="painelindex.html" class="center-align">
-                    <img src="img/cdecordel-logo3.png" alt="logomarca c de cordel" class="responsive-img" />
+            	<a href="painelindex.html" class="center-align">
+                    <img src="img/cdecordel-logo3.png" alt="logomarca c de cordel" title="C de Cordel" class="responsive-img" />
                 </a>
             </li>
-            <li class="waves-effect waves-light">
-                <a href="painelindex.html" class="scrollto center-align suave">
-                    <i class="ion-ios-home"></i>
+            <li class="waves-effect">
+                <a href="painelindex.html" class="center-align tooltipped" data-position="top" data-delay="0" data-tooltip="Meu Perfil">
+                    <i class="ion-android-contact"></i>
                 </a>
             </li>
             <li>
-                <a href="#!" class="scrollto center-align suave">
+                <a class="center-align tooltipped" data-position="top" data-delay="0" data-tooltip="Crie seus Cordéis">
                     <i class="ion-edit"></i>
                 </a>
-                <ul class="white suave">
+                <ul class="light-blue suave">
                     <li>
-                        <a href="novocordel.html" class="black-text waves-effect">Novo Cordel</a>
+                        <a href="novocordel.html">Novo Cordel</a>
                     </li>
                     <li>
-                        <a href="#!" class="black-text waves-effect">Meus Cordéis</a>
+                        <a href="meuscordeis.html">Meus Cordéis</a>
                     </li>
                 </ul>
             </li>
             <li class="active">
-                <a href="#!" class="scrollto center-align suave">
+                <a class="center-align tooltipped" data-position="top" data-delay="0" data-tooltip="Crie suas Capas">
                     <i class="ion-image"></i>
                 </a>
-                <ul class="white suave">
+                <ul class="light-blue suave">
                     <li>
-                        <a href="novacapa.html" class="black-text waves-effect">Nova Capa</a>
+                        <a href="novacapa.html">Nova Capa</a>
                     </li>
                     <li>
-                        <a href="minhascapas.html" class="black-text waves-effect">Minhas Capas</a>
+                        <a href="minhascapas.html">Minhas Capas</a>
                     </li>
                 </ul>
             </li>
-            <li class="waves-effect waves-light">
-                <a href="#!" class="scrollto center-align suave">
+            <li class="waves-effect">
+                <a href="info.html" class="center-align tooltipped" data-position="top" data-delay="0" data-tooltip="Informações">
                     <i class="ion-help-circled"></i>
                 </a>
             </li>
@@ -78,12 +73,21 @@
             <form name="montarcapa">
                 <div class="row nm">
                     <div class="col l6 m6 s12">
-                        <h6 class="white-text">Titulo</h6>
+                        <h6 class="white-text">Titulo na Capa</h6>
                         <input type="text" id="titulo" name="titulo" placeholder="Digite o titulo do Cordel" class="white-text">
                     </div>
                     <div class="col l6 m6 s12">
                         <h6 class="white-text">Autor / Co-Autor</h6>
                         <input type="text" id="autor" name="autor" placeholder="Digite o nome do autor" class="white-text">
+                    </div>
+                    <div class="col l12 m12 s12" style="margin-bottom:20px;">
+                        <h6 class="white-text">Estilo da Fonte</h6>
+                        <select class="browser-default transparent blue-grey white-text">
+                            <option value="#" class="blue-grey darken-3">Escolha sua fonte</option>
+                            <option value="1" class="blue-grey darken-3">Fonte 1</option>
+                            <option value="2" class="blue-grey darken-3">Fonte 2</option>
+                            <option value="3" class="blue-grey darken-3">Fonte 3</option>
+                        </select>
                     </div>
                     <div class="col l12 m12 s12">
                         <h6 class="white-text">Cor da Capa</h6>

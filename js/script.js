@@ -1,12 +1,14 @@
 $(document).ready(function(){
+
+	$('.tooltipped').tooltip({delay: 0});
+
 	montarCordel();
 	montarCapa();
 })
 $(window).resize(function(){})
 
 function montarCordel(){
-	var a = $(".palco .folha ul li").length;
-	$(".palco .folha ul").width( a * 400);
+	
 }
 function montarCapa(){
 	$(".palco-suporte #titulo").keyup(function(){
