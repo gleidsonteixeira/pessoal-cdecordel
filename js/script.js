@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 	$('.tooltipped').tooltip({delay: 0});
-
+	$('.parallax').parallax();
 	montarCordel();
 	montarCapa();
 	cBanner();
@@ -50,7 +50,11 @@ function montarCapa(){
 	})
 }
 function cBanner(){
-	$('#cBanner').cycle();
+	$('#cBanner').cycle({
+		timeout: 0,
+		prev: '#dois .prev',
+		next: '#dois .next'
+	});
 }
 
 $(function() { 
