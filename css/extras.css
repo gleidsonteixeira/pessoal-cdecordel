@@ -120,16 +120,6 @@ body{
 	height: 100px;
 	position: relative;
 }
-#aMenu ul li::before{
-	content:"";
-	width: 60px;
-	height: 2px;
-	border-radius: 100%;
-	background-color: rgba(255,255,255,.5);
-	position: absolute;
-	bottom: 0;
-	left: 20px;
-}
 #aMenu ul li:last-child::before{
 	display: none;
 }
@@ -150,7 +140,7 @@ body{
 	background-color: rgba(0,0,0,.1);
 }
 #aMenu ul li.active a{
-	color: white;
+	color: #ffb300;
 }
 #aMenu ul li i{
 	width: 50px;

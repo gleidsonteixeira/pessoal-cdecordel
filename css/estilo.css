@@ -36,7 +36,7 @@
 }
 .btn{
 	height: 30px;
-	line-height: 30px;
+	line-height: 28px;
 	border-radius: 15px;
 	text-transform: capitalize
 }
@@ -44,12 +44,13 @@
 /*** INICIO ***/
 
 body{
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
+    width: 100%;
+    /*height: 100vh;*/
     padding: 40px;
-	padding-top: 80px;
+	padding-top: 100px;
+	padding-bottom: 40px;
     position: relative;
+    font-family: "Open Sans", sans-serif;
 }
 .gradi{
 	background-color: #ffd54f;
@@ -59,11 +60,11 @@ body{
 	background-image: -o-linear-gradient(45deg, #ffb300, #ffd54f) !important;
 }
 .panodefundo{
-	width: 40%;
+	width: 60%;
 	height: 100%;
 	position: fixed;
 	top: 0;
-	left: -150px;
+	left: -200px;
 	transform: skewX(-20deg);
 	-webkit-transform: skewX(-20deg);
 	-moz-transform: skewX(-20deg);
@@ -71,16 +72,16 @@ body{
 	-o-transform: skewX(-20deg);
 }
 section#um {
-	width: calc(100% - 80px);
+	width: 100%;
 	position: fixed;
+	z-index: 10;
 	top: 0;
-	left: 40px;
+	left: 0;
+	padding: 0 40px;
 }
 
 div.geral{
     width:100%;
-    height: calc(100vh - 120px);
-    overflow: auto;
 	position: relative;
 	z-index: 1;
 	box-shadow: 0px 10px 30px rgba(0,0,0,.35);
@@ -99,6 +100,16 @@ div#cMenu h1 img{
 	margin-top: 20px;
 	height: 40px;
 }
+div#cMenu h1 span{
+	display: inline-block;
+    vertical-align: top;
+    padding-left: 30px;
+    opacity: 0;
+}
+div#cMenu h1 span.active{
+	padding-left: 0;
+    opacity: 1;	
+}
 div#cMenu ul{
     height: 30px;
     margin: 25px 0;
@@ -112,7 +123,7 @@ div#cMenu ul li{
 
 section#dois .col.quadro{
     position: relative;
-    height: calc(100vh - 120px);
+    height: calc(100vh - 80px);
     overflow: hidden;
 }
 
@@ -210,19 +221,27 @@ section#tres{
 
 div#cBiblioteca{
 	width: 100%;
-}
-div#cBiblioteca .parallax-container{
 	position: relative;
 	height: 100vh;
+	overflow: hidden;
 }
-div#cBiblioteca .parallax-container::before{
+div#cBiblioteca::before{
 	content: "";
 	width: 50%;
 	height: 100%;
-	background-color: white;
 	position: absolute;
 	top: 0;
 	left: 50%;
+}
+div#cBiblioteca img{
+	opacity: .1;
+	display: block;
+	transform: rotate(-20deg) scale(1.5,1.5);
+	filter: blur(3px);
+	-webkit-filter: blur(3px);
+	-moz-filter: blur(3px);
+	-ms-filter: blur(3px);
+	-o-filter: blur(3px);
 }
 div#cBiblioteca .content{
 	width: 50%;
@@ -253,12 +272,17 @@ div#cComoFunciona .content{
 	-ms-transform: translateY(-50%);
 	-o-transform: translateY(-50%);
 }
+div#cComoFunciona img{
+	height: 80%;
+	margin-top: 10%;
+}
 
 div#cAplicativo{
 	padding-bottom: 40px;
 }
 div#cAplicativo h2{
 	padding: 30px 0;
+	padding-top: 0;
 }
 div#cAplicativo p{
 	width: 80%;
@@ -303,14 +327,77 @@ div#cNewsletter button{
 	margin-left: 18px;
 }
 
-
-
-
-
-
 div#cRodape{
 	padding: 30px 0;
 }
 div#cRodape img{
 	width: 60px;
+}
+
+
+@media only screen and ( max-width: 768px ){
+	section#dois .col.quadro{
+		height: 400px;
+	}
+	section#dois .content{
+		text-align: center;
+	}
+	div#cBiblioteca{
+		height: 400px;
+	}
+	div#cBiblioteca .content{
+		width: 100%;
+		left: 0;
+		text-align: center;
+	}
+	div#cComoFunciona .col{
+		height: 400px;
+		text-align: center;
+	}
+	div#cComoFunciona img{
+		margin: 0 auto;
+	}
+	div#cNewsletter{
+		text-align: center;
+		margin-bottom: 50px;
+	}
+	div#cNewsletter p{
+		width: 300px;
+		text-align: center;
+	}
+	div#cNewsletter p,
+	div#cNewsletter form,
+	div#cNewsletter form button{
+		display: block;
+		float: none;
+		margin: 0 auto
+	}
+	div#cNewsletter form input{
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+}
+
+@media only screen and ( max-width: 480px ){
+	div#cBanner .cordel h4{
+		font-size: 20px;
+	}
+	div#cComoFunciona img{
+		width: 80%;
+		margin-top: 50px;
+		height: auto;
+	}
+	div#cAplicativo .item{
+		height: auto;
+	}
+	div#cAplicativo .item p{
+		margin: 15px auto;
+		float: none !important;
+	}
+}
+@media only screen and ( min-width: 1920px ){
+	div.geral{
+		width: 1500px;
+		margin: 0 auto;
+	}
 }

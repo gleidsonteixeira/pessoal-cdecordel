@@ -5,8 +5,23 @@ $(document).ready(function(){
 	montarCordel();
 	montarCapa();
 	cBanner();
+	cMenu();
 })
 $(window).resize(function(){})
+$(window).scroll(function(){
+	cMenu();
+})
+
+function cMenu(){
+	var a = window.pageYOffset;
+	if(a > 50){
+		$("#um").css({"background-color":"white"});
+		$("#um h1 span").addClass("active");
+	}else{
+		$("#um").css({"background-color":"transparent"})
+		$("#um h1 span").removeClass("active");
+	}
+}
 
 function montarCordel(){
 	
