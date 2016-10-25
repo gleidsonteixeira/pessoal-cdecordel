@@ -1,4 +1,7 @@
 $(document).ready(function(){
+
+	$('.tooltipped').tooltip({delay: 0});
+	$('.parallax').parallax();
 	montarCordel();
 	montarCapa();
 	cBanner();
@@ -6,8 +9,7 @@ $(document).ready(function(){
 $(window).resize(function(){})
 
 function montarCordel(){
-	var a = $(".palco .folha ul li").length;
-	$(".palco .folha ul").width( a * 400);
+	
 }
 function montarCapa(){
 	$(".palco-suporte #titulo").keyup(function(){
@@ -48,7 +50,11 @@ function montarCapa(){
 	})
 }
 function cBanner(){
-	$('#cBanner').cycle();
+	$('#cBanner').cycle({
+		timeout: 0,
+		prev: '#dois .prev',
+		next: '#dois .next'
+	});
 }
 
 $(function() { 
