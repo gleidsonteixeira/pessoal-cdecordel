@@ -1,7 +1,8 @@
 $(document).ready(function(){
 
-	$('.tooltipped').tooltip({delay: 0});
-	$('.parallax').parallax();
+	$(".tooltipped").tooltip({delay: 0});
+	$(".parallax").parallax();
+	$(".posts ul").niceScroll(); 
 	montarCordel();
 	montarCapa();
 	cBanner();

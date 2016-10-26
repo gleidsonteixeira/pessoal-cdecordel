@@ -1,16 +1,7 @@
 /* CSS Document */
 body{
 	background-color: #fafafe;
-}
-.panodefundo{
-	width: 50%;
-	height: 100%;
-	overflow: hidden;
-	position: fixed;
-	z-index: -1;
-	top: 0;
-	left: 60%;
-	transform: skewX(-20deg);
+	font-family: 'Open Sans', sans-serif;
 }
 .gradi{
 	background-color: #ffd54f;
@@ -27,9 +18,6 @@ body{
 	background-image: -o-linear-gradient(45deg, #ffd54f, #ffb300) !important;
 }
 
-.condesed{
-	font-family: 'Roboto Condensed', sans-serif;
-}
 #oculto{
 	display:none;
 }
@@ -97,10 +85,6 @@ body{
 	border: 2px solid #FFF;
 	line-height: 52px;
 }
-.op, body{
-	font-family: 'Open Sans', sans-serif;
-}
-
 
 /****************************************************************************************/
 
@@ -214,6 +198,80 @@ body{
 	top: 0;
 	overflow: hidden;
 }
+#aContent .palco .busca{
+	width: 80%;
+	margin: 20px auto;
+	border-radius: 5px;
+	padding-left: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+#aContent .palco .busca input{
+	width: calc(100% - 50px);
+	margin: 0;
+	border: 0;
+	box-shadow: none;
+}
+#aContent .palco .busca button{
+	border: 0;
+	width: 40px;
+	height: 40px;
+}
+#aContent .palco .posts{
+	width: 80%;
+	margin: 0 auto;
+}
+#aContent .palco .posts ul{
+	border-left: 1px solid white;
+	padding-left: 20px;
+	padding-right: 20px;
+	height: calc(100vh - 115px);
+	overflow: auto;
+}
+#aContent .palco .posts li{
+	padding: 10px;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	position: relative;
+}
+#aContent .palco .posts li::after{
+	content: "";
+	width: 20px;
+	height: 1px;
+	background-color: white;
+	position: absolute;
+	top: 20px;
+	right: 100%;
+}
+#aContent .palco .posts li::before{
+	content: "";
+	width: 9px;
+	height: 9px;
+	border-radius: 5px;
+	background-color: white;
+	position: absolute;
+	top: 16px;
+	right: calc(100% + 16px);
+}
+#aContent .palco .posts li h6{
+	height: 30px;
+	line-height: 30px;
+}
+#aContent .palco .posts li h6 .foto{
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	overflow: hidden;
+}
+#aContent .palco .posts li h6 span{
+	display: inline-block;
+	vertical-align: top;
+	padding-left: 5px;
+}
+#aContent .palco .posts li .btn{
+	margin-top: 0;
+}
+
 #aContent .palco .capa,
 #aContent .palco .folha{
 	width: 400px;
@@ -290,6 +348,7 @@ body{
 	position: absolute;
 	top: 20px;
 	left: 20px;
+	overflow: hidden;
 }
 #aContent .palco-suporte .meuperfil h5{
 	position: relative;
@@ -305,7 +364,33 @@ body{
 	left: 0;
 	top: 100%;
 }
-
+#aContent .palco-suporte .meuperfil ul{
+	border-radius: 0;
+}
+#aContent .palco-suporte .meuperfil ul li{
+	width: 33.333%;
+}
+#aContent .palco-suporte .meuperfil ul li:hover{
+	background-color: rgba(0,0,0,.05);
+}
+#aContent .palco-suporte .meuperfil h6{
+	margin: 0;
+}
+#aContent .palco-suporte .meuperfil i{
+	font-size: 30px;
+}
+#aContent .palco-suporte .listacordeis{
+	padding: 20px;
+	margin-top: 20px;
+	border-radius: 5px;
+}
+#aContent .palco-suporte .listacordeis h6{
+	padding: 0;
+	margin: 0;
+}
+#aContent .palco-suporte .montarcapa{
+	border-radius: 5px;
+}
 
 #aContent .palco-suporte h6{
 	font-size: 12px;
@@ -404,7 +489,7 @@ body{
 	left:calc(100% + 20px);
 }
 #aContent .meuscordeis ul{
-	padding:0 11px;
+	padding: 0 11px;
 }
 #aContent .meuscordeis ul li:last-child{
 	border: 2px dashed #444 ;
