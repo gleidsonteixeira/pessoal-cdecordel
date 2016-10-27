@@ -120,6 +120,9 @@ body{
 	height: 100px;
 	position: relative;
 }
+#aMenu ul li:last-child::before{
+	display: none;
+}
 #aMenu ul li img{
 	width:50px;
 	margin-top:16px;
@@ -131,13 +134,13 @@ body{
 #aMenu ul li a{
 	display: block;
 	padding-top: 10px;
-	color: rgba(0,0,0,.5)
+	color: rgba(0,0,0,.5);
 }
 #aMenu ul li:hover{
 	background-color: rgba(0,0,0,.1);
 }
 #aMenu ul li.active a{
-	color: white;
+	color: #ffb300;
 }
 #aMenu ul li i{
 	width: 50px;
@@ -148,7 +151,7 @@ body{
 }
 #aMenu ul li ul{
 	height: auto;
-	background-color: rgba(255,255,255,.5);
+	background-color: rgba(0,0,0,.3);
 	margin: 0;
 	position: absolute;
 	top: 50%;
@@ -167,7 +170,7 @@ body{
 	height: 0;
 	border: 15px solid transparent;
 	border-left: 0;
-	border-right-color: rgba(255,255,255,.5);
+	border-right-color: rgba(0,0,0,.3);
 	position: absolute;
 	top: calc(50% - 15px);
 	right: 100%;
@@ -181,8 +184,11 @@ body{
 	width: 150px;
 	height: auto;
 }
+#aMenu ul li ul li::before{
+	display: none;
+}
 #aMenu ul li ul li:hover{
-	background-color: rgba(255,255,255,.5);
+	background-color: rgba(0,0,0,.2);
 }
 #aMenu ul li ul li a{
 	height:auto;
@@ -196,7 +202,7 @@ body{
 }
 
 #aContent{
-	width: calc(100% - 70px);
+	width: calc(100% - 100px);
 	height: 100%;
 	position: absolute;
 	right: 0;
@@ -251,6 +257,7 @@ body{
 #aContent .palco .folha{
 	overflow: auto;
 	padding-left: 100px;
+	border-radius: 5px;
 }
 #aContent .palco .folha ul{
 	display: table;
@@ -263,16 +270,46 @@ body{
 	padding: 20px;
 }
 #aContent .palco-suporte{
-	width: 40%;
+	width: 50%;
 	height: 100%;
-	padding: 15px;
+	padding: 40px;
 	overflow: auto;
 	position: absolute;
 	right: 0;
 	top: 0;
 }
+#aContent .palco-suporte .meuperfil{
+	padding: 20px;
+	padding-left: 100px;
+	border-radius: 5px;
+	position: relative;
+}
+#aContent .palco-suporte .meuperfil .foto{
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+#aContent .palco-suporte .meuperfil h5{
+	position: relative;
+	padding-bottom: 10px;
+}
+#aContent .palco-suporte .meuperfil h5::before{
+	content: "";
+	width: 50px;
+	height: 5px;
+	border-radius: 3px;
+	background-color: currentColor;
+	position: absolute;
+	left: 0;
+	top: 100%;
+}
+
+
 #aContent .palco-suporte h6{
-	font-size: 18px;
+	font-size: 12px;
+	text-transform: uppercase;
 }
 #aContent .palco-suporte input,
 #aContent .palco-suporte select{
@@ -282,26 +319,26 @@ body{
 	padding-left: 15px;
 	box-sizing: border-box;
 	box-shadow: none;
-	border: 2px solid rgba(255,255,255,.5);
+	border: 1px solid #455a64;
 }
 #aContent .palco-suporte input::-webkit-input-placeholder{
-	color: rgba(255,255,255,.5);
+	color: #ffd54f;
 }
 
 #aContent .palco-suporte input:-moz-placeholder{
-	color: rgba(255,255,255,.5);
+	color: #ffd54f;
 }
 
 #aContent .palco-suporte input::-moz-placeholder{
-	color: rgba(255,255,255,.5);
+	color: #ffd54f;
 }
 
 #aContent .palco-suporte input:-ms-input-placeholder{
-	color: rgba(255,255,255,.5); 
+	color: #ffd54f; 
 }
 #aContent .palco-suporte input:focus,
 #aContent .palco-suporte select:focus{
-	border-color: white;
+	border-color: #ffd54f;
 }
 #aContent .palco-suporte select:focus{
 	outline: 0;
@@ -347,9 +384,10 @@ body{
 	height: 40px;
 	text-transform: none;
 }
-#aContent .meuscordeis{}
+#aContent .meuscordeis{
+	padding: 40px;
+}
 #aContent .meuscordeis h5{
-	padding-left:20px;
 }
 #aContent .meuscordeis h5 span{
 	position:relative;
