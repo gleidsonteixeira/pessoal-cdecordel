@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
+	$('.slider').slider({full_width: true});
 	$(".tooltipped").tooltip({delay: 0});
-	$(".parallax").parallax();
 	$(".posts ul").niceScroll(); 
 	montarCapa();
 	cBanner();
