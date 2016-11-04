@@ -40,17 +40,30 @@
 	border-radius: 15px;
 	text-transform: capitalize
 }
+<<<<<<< HEAD
+=======
+.mont{
+	font-family: 'Montserrat', sans-serif;
+}
+>>>>>>> 089517242a53af9c109f60c8a4cf0c8c22bbf356
 
 /*** INICIO ***/
 
 body{
     width: 100%;
+<<<<<<< HEAD
+=======
+    /*height: 100vh;*/
+>>>>>>> 089517242a53af9c109f60c8a4cf0c8c22bbf356
     padding: 40px;
 	padding-top: 100px;
 	padding-bottom: 40px;
     position: relative;
     font-family: "Open Sans", sans-serif;
+<<<<<<< HEAD
 	background-color: #fafafe;
+=======
+>>>>>>> 089517242a53af9c109f60c8a4cf0c8c22bbf356
 }
 .gradi{
 	background-color: #ffd54f;
@@ -95,12 +108,18 @@ div#cMenu h1{
     height: 80px;
     line-height: 80px;
     padding-left: 10px;
+<<<<<<< HEAD
 	display: inline-block;
+=======
+>>>>>>> 089517242a53af9c109f60c8a4cf0c8c22bbf356
 }
 div#cMenu h1 img{
 	margin-top: 20px;
 	height: 40px;
+<<<<<<< HEAD
 	margin-right: 20px;
+=======
+>>>>>>> 089517242a53af9c109f60c8a4cf0c8c22bbf356
 }
 div#cMenu h1 span{
 	display: inline-block;
@@ -121,7 +140,10 @@ div#cMenu ul li{
     height: 30px;
     padding: 0 10px;
     display: inline-block;
+<<<<<<< HEAD
 	line-height: 30px;
+=======
+>>>>>>> 089517242a53af9c109f60c8a4cf0c8c22bbf356
 }
 
 section#dois .col.quadro{
@@ -239,12 +261,20 @@ div#cBiblioteca::before{
 div#cBiblioteca img{
 	opacity: .1;
 	display: block;
+<<<<<<< HEAD
 	/*transform: scale(1.1,1.1);
+=======
+	transform: rotate(-20deg) scale(1.5,1.5);
+>>>>>>> 089517242a53af9c109f60c8a4cf0c8c22bbf356
 	filter: blur(3px);
 	-webkit-filter: blur(3px);
 	-moz-filter: blur(3px);
 	-ms-filter: blur(3px);
+<<<<<<< HEAD
 	-o-filter: blur(3px);*/
+=======
+	-o-filter: blur(3px);
+>>>>>>> 089517242a53af9c109f60c8a4cf0c8c22bbf356
 }
 div#cBiblioteca .content{
 	width: 50%;
@@ -370,6 +400,10 @@ div#cSidebar .cordelistas .foto{
 }
 div#cSidebar .cordeis li{
 	height: 90px;
+<<<<<<< HEAD
+=======
+	border: 1px solid red;
+>>>>>>> 089517242a53af9c109f60c8a4cf0c8c22bbf356
 	position: relative;
 	padding-left: 65px; 
 }
@@ -389,6 +423,7 @@ div#cSidebar .cordeis .capa{
 	top: 0;
 	left: 0;
 }
+<<<<<<< HEAD
 div#cSidebar input{
 	margin: 0;
 	margin-bottom: 20px;
@@ -473,17 +508,24 @@ section#sete .listagem ul.paginar li{
 section#sete .listagem ul.paginar li.active{
 	background-color: #ffc107 !important;
 }
+=======
+
+>>>>>>> 089517242a53af9c109f60c8a4cf0c8c22bbf356
 
 
 div#cBanner{
 	padding-bottom: 25px;
 }
+<<<<<<< HEAD
 div#cBanner .slider .indicators .indicator-item.active{
 	background-color: #455a64;
 }
 section#oito p{
 	padding: 30px;
 }
+=======
+
+>>>>>>> 089517242a53af9c109f60c8a4cf0c8c22bbf356
 
 @media only screen and ( max-width: 768px ){
 	section#dois .col.quadro{
@@ -528,6 +570,7 @@ section#oito p{
 	}
 }
 
+<<<<<<< HEAD
 
 @media only screen and ( max-width: 480px ){
 	body{
@@ -578,6 +621,12 @@ section#oito p{
 	div#cNewsletter input{
 		width: calc(100% - 24px);
 	}
+=======
+@media only screen and ( max-width: 480px ){
+	div#cBanner .cordel h4{
+		font-size: 20px;
+	}
+>>>>>>> 089517242a53af9c109f60c8a4cf0c8c22bbf356
 	div#cComoFunciona img{
 		width: 80%;
 		margin-top: 50px;
@@ -590,9 +639,12 @@ section#oito p{
 		margin: 15px auto;
 		float: none !important;
 	}
+<<<<<<< HEAD
 	section#oito p{
 		padding: 10px;
 	}
+=======
+>>>>>>> 089517242a53af9c109f60c8a4cf0c8c22bbf356
 }
 @media only screen and ( min-width: 1920px ){
 	div.geral{
