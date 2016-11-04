@@ -15,7 +15,7 @@
 <body>
     <div id="aMenu" class="white">
         <ul class="nm">
-            <li>
+            <li class="suave">
             	<a href="painelindex.html" class="center-align">
                     <img src="img/cdecordel-logo3.png" alt="logomarca c de cordel" title="C de Cordel" class="responsive-img" />
                 </a>
@@ -26,7 +26,7 @@
                     <span class="upper">Perfil</span>
                 </a>
             </li>
-            <li>
+            <li class="suave">
                 <a class="center-align">
                     <i class="ion-edit"></i>
                     <span class="upper">Cordéis</span>
@@ -40,7 +40,7 @@
                     </li>
                 </ul>
             </li>
-            <li class="active">
+            <li class="active suave">
                 <a class="center-align">
                     <i class="ion-image"></i>
                     <span class="upper">Capas</span>
@@ -73,72 +73,72 @@
             </div>
         </div>
         <div class="palco-suporte">
-            <form name="montarcapa">
+            <form name="montarcapa" class="montarcapa white z-depth-1">
                 <div class="row nm">
                     <div class="col l6 m6 s12">
-                        <h6 class="white-text">Titulo na Capa</h6>
-                        <input type="text" id="titulo" name="titulo" placeholder="Digite o titulo do Cordel" class="white-text">
+                        <h6 class="blue-grey-text text-darken-2"><b>Titulo na Capa</b></h6>
+                        <input type="text" id="titulo" name="titulo" placeholder="Digite o titulo do Cordel" class="blue-grey-text text-darken-2">
                     </div>
                     <div class="col l6 m6 s12">
-                        <h6 class="white-text">Autor / Co-Autor</h6>
-                        <input type="text" id="autor" name="autor" placeholder="Digite o nome do autor" class="white-text">
+                        <h6 class="blue-grey-text text-darken-2"><b>Autor / Co-Autor</b></h6>
+                        <input type="text" id="autor" name="autor" placeholder="Digite o nome do autor" class="blue-grey-text text-darken-2">
                     </div>
                     <div class="col l12 m12 s12" style="margin-bottom:20px;">
-                        <h6 class="white-text">Estilo da Fonte</h6>
-                        <select class="browser-default transparent blue-grey white-text">
-                            <option value="#" class="blue-grey darken-3">Escolha sua fonte</option>
-                            <option value="1" class="blue-grey darken-3">Fonte 1</option>
-                            <option value="2" class="blue-grey darken-3">Fonte 2</option>
-                            <option value="3" class="blue-grey darken-3">Fonte 3</option>
+                        <h6 class="blue-grey-text text-darken-2"><b>Estilo da Fonte</b></h6>
+                        <select class="browser-default blue-grey-text">
+                            <option value="#">Escolha sua fonte</option>
+                            <option value="1">Fonte 1</option>
+                            <option value="2">Fonte 2</option>
+                            <option value="3">Fonte 3</option>
                         </select>
                     </div>
                     <div class="col l12 m12 s12">
-                        <h6 class="white-text">Cor da Capa</h6>
-                        <ul>
+                        <h6 class="blue-grey-text text-darken-2"><b>Cor da Capa</b></h6>
+                        <ul class="nm">
                             <li class="center-align">
                                 <p>
                                     <div class="cor red lighten-4 z-depth-1"></div>
                                     <input class="with-gap" name="cordacapa" type="radio" id="cor1" data-cor="cor1" />
-                                    <label for="cor1" class="white-text">Vermelho</label>
+                                    <label for="cor1" class="blue-grey-text text-darken-2">Vermelho</label>
                                 </p>
                             </li>
                             <li class="center-align">
                                 <p>
                                     <div class="cor yellow lighten-4 z-depth-1"></div>
                                     <input class="with-gap" name="cordacapa" type="radio" id="cor2" data-cor="cor2" />
-                                    <label for="cor2" class="white-text">Amarelo</label>
+                                    <label for="cor2" class="blue-grey-text text-darken-2">Amarelo</label>
                                 </p>
                             </li>
                             <li class="center-align">
                                 <p>
                                     <div class="cor white z-depth-1"></div>
                                     <input class="with-gap" name="cordacapa" type="radio" id="cor3" data-cor="cor3" checked="true" />
-                                    <label for="cor3" class="white-text">Branco</label>
+                                    <label for="cor3" class="blue-grey-text text-darken-2">Branco</label>
                                 </p>
                             </li>
                             <li class="center-align">
                                 <p>
                                     <div class="cor light-blue lighten-4 z-depth-1"></div>
                                     <input class="with-gap" name="cordacapa" type="radio" id="cor4" data-cor="cor4" />
-                                    <label for="cor4" class="white-text">Azul</label>
+                                    <label for="cor4" class="blue-grey-text text-darken-2">Azul</label>
                                 </p>
                             </li>
                             <li class="center-align">
                                 <p>
                                     <div class="cor light-green lighten-4 z-depth-1"></div>
                                     <input class="with-gap" name="cordacapa" type="radio" id="cor5" data-cor="cor5" />
-                                    <label for="cor5" class="white-text">Verde</label>
+                                    <label for="cor5" class="blue-grey-text text-darken-2">Verde</label>
                                 </p>
                             </li>
                         </ul>
                     </div>
                     <div class="col l12 m12 s12">
-                        <h6 class="white-text">Categorias</h6>
-                        <select class="browser-default transparent blue-grey white-text">
-                            <option value="#" class="blue-grey darken-3">Escolha o tipo de imagem</option>
-                            <option value="1" class="blue-grey darken-3">Animais</option>
-                            <option value="2" class="blue-grey darken-3">Pessoas</option>
-                            <option value="3" class="blue-grey darken-3">Plantas</option>
+                        <h6 class="blue-grey-text text-darken-2"><b>Categorias</b></h6>
+                        <select class="browser-default blue-grey-text">
+                            <option value="#">Escolha o tipo de imagem</option>
+                            <option value="1">Animais</option>
+                            <option value="2">Pessoas</option>
+                            <option value="3">Plantas</option>
                         </select>
                     </div>
                     <div class="col l12 m12 s12">
@@ -159,7 +159,7 @@
                         </div>
                     </div>
                     <div class="col l12 m12 s12 right-align">
-                        <button type="submit" class="btn light-blue">
+                        <button type="submit" class="btn gradi black-text">
                             Salvar Capa
                         </button>
                     </div>

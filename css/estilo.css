@@ -45,12 +45,12 @@
 
 body{
     width: 100%;
-    /*height: 100vh;*/
     padding: 40px;
 	padding-top: 100px;
 	padding-bottom: 40px;
     position: relative;
     font-family: "Open Sans", sans-serif;
+	background-color: #fafafe;
 }
 .gradi{
 	background-color: #ffd54f;
@@ -95,10 +95,12 @@ div#cMenu h1{
     height: 80px;
     line-height: 80px;
     padding-left: 10px;
+	display: inline-block;
 }
 div#cMenu h1 img{
 	margin-top: 20px;
 	height: 40px;
+	margin-right: 20px;
 }
 div#cMenu h1 span{
 	display: inline-block;
@@ -119,6 +121,7 @@ div#cMenu ul li{
     height: 30px;
     padding: 0 10px;
     display: inline-block;
+	line-height: 30px;
 }
 
 section#dois .col.quadro{
@@ -236,12 +239,12 @@ div#cBiblioteca::before{
 div#cBiblioteca img{
 	opacity: .1;
 	display: block;
-	transform: rotate(-20deg) scale(1.5,1.5);
+	/*transform: scale(1.1,1.1);
 	filter: blur(3px);
 	-webkit-filter: blur(3px);
 	-moz-filter: blur(3px);
 	-ms-filter: blur(3px);
-	-o-filter: blur(3px);
+	-o-filter: blur(3px);*/
 }
 div#cBiblioteca .content{
 	width: 50%;
@@ -334,6 +337,153 @@ div#cRodape img{
 	width: 60px;
 }
 
+div#cSidebar{
+	padding: 20px;
+	border-radius: 5px;
+}
+div#cSidebar .divider{
+	margin-bottom: 30px;
+}
+
+div#cSidebar .cordelistas li{
+	height: 50px;
+	position: relative;
+	padding-left: 55px;
+}
+div#cSidebar .cordelistas li a{
+	display: block;
+}
+div#cSidebar .cordelistas li b{
+	display: block;
+	padding-top: 3px;
+}
+div#cSidebar .cordelistas li span{
+	display: block;
+}
+div#cSidebar .cordelistas .foto{
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
+	position: absolute;
+	top: 5px;
+	left: 5px;
+}
+div#cSidebar .cordeis li{
+	height: 90px;
+	position: relative;
+	padding-left: 65px; 
+}
+div#cSidebar .cordeis li a{
+	display: block;
+}
+div#cSidebar .cordeis li b{
+	margin-left: 0;
+	margin-top: 10px;
+}
+div#cSidebar .cordeis li span{
+	display: block;
+}
+div#cSidebar .cordeis .capa{
+	height: 80px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+div#cSidebar input{
+	margin: 0;
+	margin-bottom: 20px;
+	height: 40px;
+	padding: 0 15px;
+	box-sizing: border-box;
+	border: 2px solid #455a64;
+	border-radius: 20px;
+}
+div#cSidebar input:focus{
+	box-shadow: none;
+}
+
+section#sete .listagem{
+	border-radius: 5px;
+}
+section#sete .listagem .col{
+	position: relative;
+	padding: 10px;
+}
+section#sete .listagem .col img{
+	width: 80px;
+	display: inline-block;
+	margin-bottom: -6px;
+}
+section#sete .listagem .col .info{
+	width: calc(100% - 90px);
+	display: inline-block;
+	vertical-align: top;
+}
+section#sete .listagem .col .info b{
+	display: block;
+}
+section#sete .listagem .col .info span{
+	font-size: 12px;
+}
+section#sete .listagem .col .info i{
+	line-height: 22px;
+}
+section#sete .listagem .col .subinfo{
+	position: absolute;
+	bottom: 10px;
+	right: 25px;
+}
+section#sete .listagem .col .subinfo b{
+	font-size: 12px;
+	margin-bottom: 10px;
+}
+section#sete .listagem ul li{
+	display: inline-block;
+	padding: 20px 10px;
+}
+section#sete .listagem ul li a.active{
+	font-weight: bold;
+	position: relative;
+}
+section#sete .listagem ul li a.active::before{
+	content: "";
+	width: 70%;
+	height: 4px;
+	background-color: currentColor;
+	border-radius: 3px;
+	position: absolute;
+	top: calc(100% + 5px);
+	left: 50%;
+	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+}
+
+section#sete .listagem ul.paginar li{
+	width: 30px;
+	height: 30px;
+	border-radius: 15px;
+	padding: 0;
+	line-height: 30px;
+	vertical-align: top;
+	margin: 0 5px;
+}
+section#sete .listagem ul.paginar li.active{
+	background-color: #ffc107 !important;
+}
+
+
+div#cBanner{
+	padding-bottom: 25px;
+}
+div#cBanner .slider .indicators .indicator-item.active{
+	background-color: #455a64;
+}
+section#oito p{
+	padding: 30px;
+}
 
 @media only screen and ( max-width: 768px ){
 	section#dois .col.quadro{
@@ -378,9 +528,55 @@ div#cRodape img{
 	}
 }
 
+
 @media only screen and ( max-width: 480px ){
+	body{
+		padding: 20px;
+		padding-top: 100px;
+	}
+	section#um{
+		padding: 0 20px;
+	}
+	div#cMenu h1{
+		font-size: 22px;
+		text-align: center;
+		padding: 0; 
+		position: relative;
+	}
+	div#cMenu h1 #oculto{
+		position: fixed;
+		right: 20px;
+		top: 0;
+	} 
+	section#dois .col.quadro .content{
+		padding: 0;
+		padding-right: 10px;
+	}
+	div#cBiblioteca .content{
+		padding: 0 10px;
+	}
+	div#cComoFunciona .content{
+		padding: 50px 10px;
+		transform: none;
+		top: 0;
+	}
+	div#cComoFunciona .col {
+		height: auto;
+		min-height: 300px;
+	}
 	div#cBanner .cordel h4{
 		font-size: 20px;
+	}
+	div#oculto{
+		padding: 20px;
+		border-radius: 5px;
+		margin-bottom: 30px;
+	}
+	div#cNewsletter p{
+		width: 100%;
+	}
+	div#cNewsletter input{
+		width: calc(100% - 24px);
 	}
 	div#cComoFunciona img{
 		width: 80%;
@@ -393,6 +589,9 @@ div#cRodape img{
 	div#cAplicativo .item p{
 		margin: 15px auto;
 		float: none !important;
+	}
+	section#oito p{
+		padding: 10px;
 	}
 }
 @media only screen and ( min-width: 1920px ){
